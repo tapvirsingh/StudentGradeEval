@@ -1,6 +1,10 @@
 # StudentGradeEval
 
-## The code is written using Visual Studio 2019
+### The code is written using Visual Studio 2019
+
+### Link to the query on facebook 
+
+[Facebook Link](https://www.facebook.com/groups/cppInPracticeQuestions/permalink/3631669460187351/)
 
 ## 1. Write a C++ program that will input a student’s final grade from 50-100. 
 Evaluate the Final grade and display the Point Equivalent based on the table below. 
