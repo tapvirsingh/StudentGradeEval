@@ -98,6 +98,13 @@ public:
 
 };
 
+void waitAndExit(string msg) {
+    // Display the output and wait for the user to press any key to exit.
+    cout << msg;
+
+    getch();
+}
+
 int main()
 {
  
@@ -106,6 +113,15 @@ int main()
 
     // Input marks
     cin >> marks;
+
+    // If marks are below 50 return an error 
+    if (marks < 50) {
+
+        waitAndExit("Marks too low, must be at least 50.");
+
+        // Return an error
+        return 1;
+    }
 
     // Creating object implicitly by passing marks as an argument.
     GradeEvaluator gE(marks);
@@ -119,10 +135,7 @@ int main()
     // Throw the output with result.
     cout << "The final grade of the student is " << finalGrade << " , the student has " << report << endl;
 
-    // Display the output and wait for the user to press any key to exit.
-    cout << "Press any key to exit.";
-
-    getch();
+    waitAndExit("Press any key to exit.");
 
     // All ok
     return 0;
